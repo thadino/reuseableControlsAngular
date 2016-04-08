@@ -1,0 +1,20 @@
+<div class="container" ng-controller="tablecontrol">
+        <header></header>
+      <form class="form-signin">
+          <h2 class="form-signin-heading">Please sign in</h2> <br>
+        <label for="inputEmail" class="sr-only">Email address</label><br>
+        <input id="inputEmail" ng-model="email" class="form-control" placeholder="Email address" required autofocus><br>
+        <label for="inputPassword" class="sr-only">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="password" required><br>Password</label>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        
+        <h3> Email: </h3> {{email}} <h3> Password: </h3> {{password}}
+        
+      </form>
+        <hr>
+        </div>
